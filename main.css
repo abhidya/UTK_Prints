@@ -1,0 +1,159 @@
+.navbar-form {
+    width: auto;
+    border: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.navbar
+{
+	min-height: 72px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+	
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    padding-top: 75px;
+}
+.navbar-custom .icon-bar {
+    background-color: #FFA500;
+}
+.navbar-custom {
+    background-color: #FFA500;
+    color: #fff;
+}
+.navbar-custom li>a:hover,
+.navbar-custom li>a:focus {
+    background-color: #49bfff;
+}
+.navbar-custom a {
+    color: #fefefe;
+}
+.navbar-custom .form-control:focus {
+    border-color: #49bfff;
+    outline: 0;
+    -webkit-box-shadow: inset 0 0 0;
+    box-shadow: inset 0 0 0;
+}
+#main,
+#main>.row {
+    height: 100%;
+}
+#main>.row {
+    overflow-y: scroll;
+}
+#left {
+    height: 100%;
+    width: 33%;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+#map-canvas {
+    height: calc(100% - 0);
+    position: absolute;
+    right: 16px;
+    top: 50px;
+    bottom: 0;
+    overflow: hidden;
+}
+#map-canvas.initial {
+    width: 66.666%;
+}
+#map-canvas.toggled {
+    width: 100%;
+    left: 0;
+}
+#showMap,
+#showResults,
+#hideSidebar,
+#showSidebar {
+    display: none;
+}
+#hideSidebar.initial {
+    display: block;
+}
+#hideSidebar.toggled {
+    display: none;
+}
+#showSidebar.toggled {
+    display: block;
+}
+#showSidebar.intial {
+    display: none;
+}
+@media (max-width: 768px) {
+    #hideSidebar,
+    #showSidebar {
+        display: none!important;
+    }
+    #showResults.initial {
+        display: block;
+    }
+    #showMap.toggled {
+        display: block;
+    }
+    #left.initial {
+        display: none;
+    }
+    #left.toggled {
+        width: 100%;
+    }
+    #map-canvas.initial {
+        display: block;
+        width: 100%;
+        left: 0;
+    }
+    #map-canvas.toggled {
+        display: none;
+    }
+}
+.friend-image {
+    text-align: center;
+}
+p {
+    margin: 0;
+}
+h4 {
+    font-weight: 600;
+}
+.light {
+    color: grey;
+}
+#toggleSidebarBtn {
+    cursor: pointer;
+    font-weight: bold;
+    width: auto;
+    background-color: #E69500;
+    border: 0px;
+    border-top: 3px white;
+    border-right: 3px white;
+    border-style: solid;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    z-index: 10;
+}
+i {
+    margin-left: 15px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}

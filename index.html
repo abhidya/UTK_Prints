@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<link rel="icon" href="https://i.imgur.com/q9pwso8.png">
+<title>Printer Locations: UTK Printer List & Search</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="A website that allows you to search UTK Printers based on location." />
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+<!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+<link rel="apple-touch-icon" href="/bootstrap/img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/bootstrap/img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/bootstrap/img/apple-touch-icon-114x114.png">
+<link href="main.css" rel="stylesheet">
+<script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-108688292-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+</head>
+<body>
+
+<div class="navbar navbar-custom navbar-fixed-top">
+<div class="navbar-header">
+<a id="title" class="navbar-brand" href="http://aws-website-utkprints-j1zg4.s3-website-us-east-1.amazonaws.com/"><img src="logo.png" class="logo" alt="hackathon logo" height="400%"></a>
+<!--
+<form id="search" class="navbar-form">
+<div class="form-group" style="display:inline;">
+<div class="input-group">
+
+
+<input id="zipcode" type="text" class="form-control" placeholder="Enter a zip code">
+<span id="searchBtn" class="input-group-addon"><span class="glyphicon glyphicon-search"></span> </span>
+</div>
+</div>
+</form>
+
+-->
+
+
+
+</div>
+</div>
+<div id="map-canvas" class="initial"></div>
+<div class="container-fluid" id="main">
+<div id="toggleSidebarBtn">
+<span id="hideSidebar" class="initial">Hide Sidebar<i class="arrow left"></span></i>
+<span id="showSidebar" class="initial">Show Sidebar<i class="arrow right"></span></i>
+<span id="showMap" class="initial">Show Map<i class="arrow left"></span></i>
+<span id="showResults" class="initial">Show Results<i class="arrow right"></span></i>
+</div>
+<div class="row">
+<div id="left" class="initial">
+<h3>UTK Printer List</h3>
+
+<hr>
+<p>This website provides a list of locations that work with MyPrint UTK. Enable locations to see which printers are available near you.</p>
+<hr>
+<span id="sidebarContent"></span>
+<div class="light">
+<p>This website provides a way to search for printers near you that work with MyPrint (based on the most recent data that we have).</p>
+<br>
+<p>Note: This website is not affiliated with myprint.utk.edu in any way. The locations were gathered from myprint.utk.edu, but you should check with them directly to verify.</p>
+</div>
+
+<br><br><br>
+</div>
+<div class="col-xs-8"></div>
+</div>
+</div>
+
+<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type='text/javascript' src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script type='text/javascript' src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkLoddt5j_1L_eDG16yPDifVRubnAPsHQ&sensor=false&extension=.js&output=embed"></script>
+<script type='text/javascript' src="main.js"></script>
+</body>
+</html>
