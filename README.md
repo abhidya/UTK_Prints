@@ -1,4 +1,30 @@
 # UTK_Prints
+
+Static map demo for finding University of Tennessee, Knoxville printers by location and printer capability.
+
+## Demo
+
+- GitHub Pages: `https://abhidya.github.io/UTK_Prints/`
+- Main page: `index.html`
+
+## Run locally
+
+Serve the folder with any static file server:
+
+```sh
+python3 -m http.server 4173
+```
+
+Then open:
+
+```text
+http://localhost:4173
+```
+
+The map depends on Google Maps and remote CDN assets, so the full demo requires an internet connection and a valid Maps API key.
+
+## Project background
+
 # Inspiration
 myprint.utk.edu is UTK's website that allows you to print too many of the printers on campus through a web interface. However choosing which printer to print to has a flaw, you have to know what the printers name is. Often I find myself running late to class with a lab report that needs to be printed out, but I don't have the time to run 20 minutes too and from the library.  My web project solves that problem. 
 # What it does
